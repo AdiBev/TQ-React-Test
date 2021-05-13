@@ -1,3 +1,4 @@
+import { Company } from '../../types';
 import RequestStatus from '../RequestStatus';
 
 export const SET_APPLICATIONS_REQUESTED = 'SET_APPLICATIONS_REQUESTED';
@@ -11,7 +12,8 @@ export const ADD_APPLICATION_FAILED = 'ADD_APPLICATION_FAILED';
 export type ApplicationsState = {
   setApplicationsState: RequestStatus;
   addApplicationState: RequestStatus;
-  //Todo
+  companies: Company[];
+  postData: Company | {};
 };
 
 type SetApplicationsRequestedAction = {

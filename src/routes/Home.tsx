@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container, Row, Col, Button } from 'react-bootstrap';
+import { LinkContainer } from 'react-router-bootstrap';
 
 const Home: React.FC = () => {
   return (
@@ -14,7 +15,9 @@ const Home: React.FC = () => {
 
           <hr />
 
-          <Button>View Companies</Button>
+          <LinkContainer to='/companies'>
+            <Button>View Companies</Button>
+          </LinkContainer>
         </Col>
       </Row>
     </Container>
